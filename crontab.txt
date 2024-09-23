@@ -1,0 +1,1 @@
+*/5 * * * * /usr/bin/python3 /{HOME_PATH}/skyranger/main.py >> /{HOME_PATH}/skyranger/cron.log 2>&1
