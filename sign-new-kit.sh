@@ -47,9 +47,9 @@ scp "$CERT_DIR/$SKYRANGER_COMPONENT.crt" "$PRIVATE_KEY/$SKYRANGER_COMPONENT.key"
 
 # Check if SCP succeeded
 if [ $? -eq 0  ]; then
-    echo "$(date) Information: Files successfully transferred to $WINDOWS_IP:$WINDOWS_DIR"
+    echo "$(date) Information: Files successfully transferred to $RPI_IP:$RPI_DIR"
 else
-    echo "$(date) Critical: Failed to transfer files to $WINDOWS_IP"
+    echo "$(date) Critical: Failed to transfer files to $RPI_IP"
     exit 2
 fi
 
